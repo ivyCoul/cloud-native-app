@@ -11,8 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -
-        name: Login ti Docker Hub
+      - name: Login ti Docker Hub
         uses: docker/login-action@v2
         with:
           username: ${{secret.DOCKERHUB_USERNAME}}
