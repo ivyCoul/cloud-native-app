@@ -20,6 +20,8 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
+          context: ./web
           push: true
-          tags: user/app:latest
+          tags: ivydocker9/web:latest
+          
       
